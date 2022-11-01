@@ -1,0 +1,150 @@
+.logo{
+    margin-top: 28px;
+    margin-left: 100px;
+}
+.close{
+    color: black;
+    z-index: 2;
+    margin-left: 95px;
+}
+.close:hover{
+    color: red;
+}
+.asterisk{
+    color: red;
+}
+.card{
+    box-sizing: border-box;
+    border: 1px;
+    width: 28%;
+    height: auto;
+    box-shadow: 2px 5px 10px 2px rgba(161, 161, 161, 0.6);
+    margin-left: 490px;
+}
+.eye{
+    border: 1px solid grey;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    margin-left: -50px;
+    width: 45px;
+    align-content: center;
+    z-index: 1;
+    cursor: pointer;
+}
+.hr{
+    width: 90%;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+#nav-home-tab{
+    color: rgb(94, 92, 92);
+    font-weight: bold;
+}
+#nav-home-tab:hover{
+    color: rgb(233, 122, 19);
+    background-color: white;
+}
+#nav-profile-tab{
+    color: rgb(94, 92, 92);
+    font-weight: bold;
+}
+#nav-profile-tab:hover{
+    color: rgb(233, 122, 19);
+    background-color: white;
+}
+.first-tag{
+    font-size: 13px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.email-tag{
+    font-size: 13px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+.password-tag{
+    font-size: 13px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+.email, .password{
+    width: 90%;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+.btn1{
+    background-color: rgb(233, 122, 19);
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90%;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.btn1:hover{
+    background-color: gold;
+}
+.btn2{
+    margin-top: 15px;
+    border: 1px solid rgb(233, 122, 19);
+    color: #b3b3b3;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90%;
+    cursor:pointer;
+    margin-left: 20px;
+}
+.btn2:hover{
+    background-color: #f5f3f3;
+}
+.btn3{
+    background-color: rgb(233, 122, 19);
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90%;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.btn3:hover{
+    background-color: gold;
+}
+.footer-title{
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+}
+.fb, .twitter, .google{
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 10px;
+    width: 25%;
+    height: 25px;
+    text-align: center;
+    cursor:pointer;
+    padding-top: 5px;
+}
+.fb{
+    background-color: #3B5998;
+}
+.twitter{
+    background-color: #55ACEE;
+}
+.google{
+    background-color: #DD4B39;
+}

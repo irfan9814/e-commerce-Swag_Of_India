@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swag of India</title>
+    <link rel="shortcut icon" type="image/png" href="./img/Home-page/logo_fav.png">
+    <link rel="stylesheet" href="./css/style-desktop.css">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
+
+
+    <!-- Google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Pinyon+Script&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <section class="header-navbar">
+        <div class="header" id="header">
+            <div class="c-i">
+                <div class="shortcut icons">
+                    <a href=""><img src="./img/Home-page/facebook round.png" alt="facebook_shortcut"></a>
+                    <a href=""><img src="./img/Home-page/youtube_round.png" alt="youtube_shortcut"></a>
+                    <a href=""><img src="./img/Home-page/twitter round.png" alt="twitter_shortcut"></a>
+                </div>
+            </div>
+            <div id="search">
+                <input type="text" class="search" placeholder="Search Products & Brands"
+                    aria-label="Search Products & Brands">
+            </div>
+            <div class="contact">
+                <a href="">
+                    <img src="./img/Home-page/call_icon.png" alt="call_icon"></a>
+                <div id="country-sc"><a href="./Cart.html">+91 9838203708</a></div>
+            </div>
+            <div class="sell"><a href="./seller-page.html">Sell On Company</a></div>
+            <div class="app"><a href="./profile.html">My Account</a></div>
+            <div class="language">
+                <img src="./img/Home-page/india.png" alt="country-flag" id="country-flag">
+                <form action="#">
+                    <select name="select" id="select1"
+                        onchange="document.getElementById('country-flag').src = countryFlag[this.value], document.getElementById('country-sc').innerHTML = countrySc[this.value];">
+                        <option value="India">India</option>
+                        <option value="USA"> USA</option>
+                        <option value="UAE">UAE</option>
+                        <option value="CANADA">Canada</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Panel -->
+    <section class="second-navbar">
+        <div class="nav_panel" id="nav_panel">
+            <img src="./img/Home-page/logo.png" alt="logo">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li class="dropdown tab" id="tab1" aria-controls="panel1" aria-selected="true" role="tab" tabindex="0">
+                    <a href="">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="#">Menu One</a>
+                        <a href="#">Menu Two</a>
+                        <a href="#">Menu Three</a>
+                        <a href="#">Menu Four</a>
+                    </div>
+                </li>
+                <li id="tab2" class="tab" aria-controls="panel2" role="tabe" aria-selected="false" tabindex="1"><a
+                        href="">Latest</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div id="panel1" class="panel" aria-labelledby="tab1" role="tabpanel" aria-hidden="false"></div>
+            <div id="panel2" class="panel hidden" aria-labelledby="tab2" role="tabpanel" aria-hidden="true"></div>
+            <div class="main-icons d-flex">
+                <div class="icons-round">
+                    <a href="./wishlist.html"><i class="fa-solid fa-heart heart"></i></a>
+                    <div id="wishlist-item" class="wishlist-item"></div>
+                </div>
+                <div class="icons-round">
+                    <a href="./Cart.html"><i class="fa-solid fa-cart-arrow-down kart"></i></a>
+                    <div id="cart-amount" class="cart-amount">0</div>
+                </div>
+            </div>
+            <div id="signin">
+                <a href="./sign-in.html" aria-labelledby="signin" role="tab" area-selected="true"
+                    tabindex="0"><button>SIGN IN</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hot Deal -->
+    <!-- carousel -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="hot-deals">
+                    <img src="./img/Home-page/image1.png" class="d-block" alt="image1">
+                    <div class="rectangle">
+                        <div id="discount">15% Discount on the purchase of 1</div>
+                        <div id="eth-col">
+                            <ul>
+                                <li>Ethnic</li>
+                                <li>Collection</li>
+                            </ul>
+                        </div>
+                        <div id="tagline">Best Cloth Collection Of 2020!</div>
+                        <div class="shopnow-btn">
+                            <div class="rectangle2"></div>
+                            <button id="shopnow"><a href="">SHOP NOW</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hot-deals">
+                    <img src="./img/Home-page/image1.png" class="d-block" alt="image1">
+                    <div class="rectangle">
+                        <div id="discount">40% Discount on the purchase of 2</div>
+                        <div id="eth-col">
+                            <ul>
+                                <li>Ethnic</li>
+                                <li>Collection</li>
+                            </ul>
+                        </div>
+                        <div id="tagline">Best Cloth Collection Of 2020!</div>
+                        <div class="shopnow-btn">
+                            <div class="rectangle2"></div>
+                            <button id="shopnow"><a href="">SHOP NOW</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hot-deals">
+                    <img src="./img/Home-page/image1.png" class="d-block " alt="image1">
+                    <div class="rectangle">
+                        <div id="discount">Buy 2 Get 1 Free</div>
+                        <div id="eth-col">
+                            <ul>
+                                <li>Ethnic</li>
+                                <li>Collection</li>
+                            </ul>
+                        </div>
+                        <div id="tagline">Best Cloth Collection Of 2020!</div>
+                        <div class="shopnow-btn">
+                            <div class="rectangle2"></div>
+                            <button id="shopnow"><a href="">SHOP NOW</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Categories Section -->
+    <div class="categories">
+        <h3>SHOP BY CATEGORIES</h3>
+        <div class="cat-body">
+            <section class="cat">
+                <img id="cat1" src="./img/Home-page/cat1.png" alt="cat1">
+                <h4 id="cat1-h">WOMENS</h4>
+                <button id="shopnow"><a href="">SHOP NOW</a></button>
+            </section>
+            <section class="cat">
+                <img id="cat2" src="./img/Home-page/cat2.png" alt="cat2">
+                <h4 id="cat2-h">ETHNIC WEAR</h4>
+                <button id="shopnow"><a href="">SHOP NOW</a></button>
+            </section>
+            <section class="cat">
+                <img id="cat3" src="./img/Home-page/cat3.png" alt="cat3">
+                <h4 id="cat3-h">MENS</h4>
+                <button id="shopnow"><a href="">SHOP NOW</a></button>
+            </section>
+        </div>
+    </div>
+
+    <!-- Latest Product -->
+    <div class="l-p">
+        <h3>LATEST PRODUCTS</h3>
+        <ul>
+            <li><a href="">All</a></li>
+            <li><a href="">Featured</a></li>
+            <li><a href="">Popular</a></li>
+            <li><a href="">Sale</a></li>
+            <li><a href="">Best Rated</a></li>
+        </ul>
+    </div>
+    <div class="d-flex product-list" id="shop">
+
+    </div>
+
+    <!-- VIEW MORE -->
+    <div class="vm">
+        <a href="./Product-list-page.html"><button>VIEW MORE +</button></a>
+    </div>
+
+    <!-- Key Feature -->
+    <div class="key-feature">
+        <section class="kf1">
+            <img src="./img/Home-page/Image 34.png" alt="secure-payment">
+            <h5>100% SECURE PAYMENTS</h5>
+            <div class="text"><span>Turpis Eleifend Vitae Malesuada Magna<br>Congue. Damus Id Ullamcorper Neque.</span>
+            </div>
+        </section>
+        <section class="kf2">
+            <img src="./img/Home-page/Image 35.png" alt="trustpay">
+            <h5>TRUSTPAY</h5>
+            <div class="text"><span>Turpis Eleifend Vitae Malesuada Magna<br>Congue. Damus Id Ullamcorper Neque.</span>
+            </div>
+        </section>
+        <section class="kf3">
+            <img src="./img/Home-page/Image 36.png" alt="help-center">
+            <h5>HELP CENTER</h5>
+            <div class="text"><span>Turpis Eleifend Vitae Malesuada Magna<br>Congue. Damus Id Ullamcorper Neque.</span>
+            </div>
+        </section>
+        <section class="kf4">
+            <img src="./img/Home-page/Image 37.png" alt="shop-on-the-go">
+            <h5>SHOP ON THE GO</h5>
+            <div class="text"><span>Turpis Eleifend Vitae Malesuada Magna<br>Congue. Damus Id Ullamcorper Neque.</span>
+            </div>
+        </section>
+    </div>
+
+    <!-- Values -->
+    <div class="values">
+        <div class="policy-info">
+            <ul>
+                <li>
+                    <h6>POLICY INFO</h6>
+                </li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms of Sale</a></li>
+                <li><a href="">Terms of Use</a></li>
+                <li><a href="">Report Abuse & Takedown Policy</a></li>
+            </ul>
+        </div>
+        <div class="company">
+            <ul>
+                <li>
+                    <h6>COMPANY</h6>
+                </li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Core Values</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Sitemap</a></li>
+            </ul>
+        </div>
+        <div class="sd-business">
+            <ul>
+                <li>
+                    <h6>SNAPDEAL BUSINESS</h6>
+                </li>
+                <li><a href="./seller-page.html">Register as a Seller</a></li>
+                <li><a href="">Sell on Snapdeal</a></li>
+                <li><a href="">Advertise on Snapdeal</a></li>
+                <li><a href="">Media Enquiries</a></li>
+                <li><a href="">Be an Affiliate</a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <ul>
+                <li>
+                    <h6>NEED HELP ?</h6>
+                </li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Online Shopping</a></li>
+            </ul>
+        </div>
+        <div class="subscribe">
+            <ul>
+                <li>
+                    <h6>SUBSCRIBE</h6>
+                </li>
+                <li><input type="email" placeholder="Your Email Address">
+                    <button id="subscribe">Subscribe</button>
+                </li>
+                <li id="register">Register now to get updates on promotions<br>
+                    and coupons. or <a id="app" href="">Download App</a></li>
+            </ul>
+        </div>
+        <div class="to-top">
+            <img src="./img/Home-page/up.png" alt="up" onclick="topFunction()">
+        </div>
+    </div>
+    <hr id="hr">
+
+    <!-- Footer -->
+    <div>
+        <div class="footer">
+            <h6 id="payment">PAYMENT</h6>
+            <h6 id="connect">CONNECT</h6>
+        </div>
+        <div class="footer-images">
+            <section id="cards">
+                <img src="./img/Home-page/Image 38.png" alt="card1">
+                <img src="./img/Home-page/Image 39.png" alt="card2">
+                <img src="./img/Home-page/Image 40.png" alt="card3">
+                <img src="./img/Home-page/Image 41.png" alt="card4">
+                <img src="./img/Home-page/Image 42.png" alt="cod">
+                <img src="./img/Home-page/Image 43.png" alt="net banking">
+            </section>
+            <section id="connect-via-logo">
+                <a href=""><img src="./img/Home-page/Image 44.png" alt="fb"></a>
+                <a href=""><img src="./img/Home-page/Image 45.png" alt="tweeter"></a>
+                <a href=""><img src="./img/Home-page/Image 46.png" alt="youtube"></a>
+                <a href=""><img src="./img/Home-page/Image 47.png" alt="insta"></a>
+            </section>
+        </div>
+    </div>
+    <script src="./JS/Data.js"></script>
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>

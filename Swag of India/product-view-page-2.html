@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product View Page</title>
+    <link rel="shortcut icon" type="image/png" href="./img/Home-page/logo_fav.png">
+    <link rel="stylesheet" href="./css/Product-view-page.css">
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/svg-with-js.min.css"></script>
+
+    <!-- Google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@100&family=Uchen&family=Yellowtail&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <section class="header-navbar">
+        <div class="header" id="header">
+            <div class="c-i">
+                <div class="shortcut icons">
+                    <a href=""><img src="./img/Home-page/facebook round.png" alt="facebook_shortcut"></a>
+                    <a href=""><img src="./img/Home-page/youtube_round.png" alt="youtube_shortcut"></a>
+                    <a href=""><img src="./img/Home-page/twitter round.png" alt="twitter_shortcut"></a>
+                </div>
+            </div>
+            <div id="search">
+                <input type="text" class="search" placeholder="Search Products & Brands"
+                    aria-label="Search Products & Brands">
+            </div>
+            <div class="contact">
+                <a href="">
+                    <img src="./img/Home-page/call_icon.png" alt="call_icon"></a>
+                <div id="country-sc"><a href="">+91 9838203708</div>
+                </p>
+            </div>
+            <div class="sell"><a href="./seller-page.html">Sell On Company</a></div>
+            <div class="app"><a href="./profile.html">My Account</a></div>
+            <div class="language">
+                <img src="./img/Home-page/india.png" alt="India" id="country-flag">
+                <form action="#">
+                    <select name="select" id="select1"
+                        onchange="document.getElementById('country-flag').src = countryFlag[this.value], document.getElementById('country-sc').innerHTML = countrySc[this.value];">
+                        <option value="India">India</option>
+                        <option value="USA"> USA</option>
+                        <option value="UAE">UAE</option>
+                        <option value="CANADA">Canada</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Panel -->
+    <section class="second-navbar">
+        <div class="nav_panel" id="nav_panel">
+            <a href="./index.html"><img src="./img/Home-page/logo.png" alt="logo"></a>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li class="dropdown tab" id="tab1" aria-controls="panel1" aria-selected="true" role="tab" tabindex="0">
+                    <a href="">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="#">Menu One</a>
+                        <a href="#">Menu Two</a>
+                        <a href="#">Menu Three</a>
+                        <a href="#">Menu Four</a>
+                    </div>
+                </li>
+                <li id="tab2" class="tab" aria-controls="panel2" role="tabe" aria-selected="false" tabindex="1"><a
+                        href="">Latest</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div id="panel1" class="panel" aria-labelledby="tab1" role="tabpanel" aria-hidden="false"></div>
+            <div id="panel2" class="panel hidden" aria-labelledby="tab2" role="tabpanel" aria-hidden="true"></div>
+            <div id="signin">
+                <a href="./sign-in.html" aria-labelledby="signin" role="tab" area-selected="true"
+                    tabindex="0"><button>SIGN IN</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Return Order Starts-->
+    <div class="path d-flex"><span id="go-to-home"><a href="./index.html">Home</a>&nbsp;</span> / Men / Casual /<p>
+            Shorts</p>
+    </div>
+
+    <!-- Left Side -->
+    <div class="Return-page d-flex">
+        <div class="my-account">
+            <img src="./img/Home-page/product2.png" alt="image">
+            <img src="./img/Home-page/product2.png" alt="image">
+            <img src="./img/Home-page/product2.png" alt="image">
+            <img src="./img/Home-page/product2.png" alt="image">
+        </div>
+
+        <!-- Right Side -->
+        <div class="return-orders">
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="d-flex">
+                <img src="./img/Home-page/product2.png" alt="image" class="product-image">
+                <div class="product-d">
+                    <p>BREEEZE Ultra-light Boxer Shorts</p>
+                    <a href="#ratings" class="text-d-none"><div class="product-star-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>39,122 ratings | 1000+ answered questions</span>
+                    </div>
+                    </a>
+                    <div class="product-price">
+                        <span>Rs 1099.0</span>
+                        <del>Rs 2748.0</del>
+                        <span>(60% Off)</span>
+                    </div>
+                    <div>
+                        <p>Short Description</p>
+                        <p>100% Acrylic, Imported, Pull On closure, Acrylic.soft and breathable fabric.<br>
+                            Crewneck, long sleeves, waffle pullover sweater. With heart embroidered <br> detailing, this
+                            stylish pulloverwill stand out in a crowd full of love.
+                        </p>
+                    </div>
+                    <div id="select-qty" class="d-flex select-qty">
+                        <p>SELECT SIZE</p>
+                        <P>QTY</P>
+                    </div>
+                    <div class="size-qty-no d-flex">
+                        <div class="size-no-border">39</div>
+                        <div class="size-no-border">40</div>
+                        <div class="size-no-border">42</div>
+                        <div class="size-no-border">44</div>
+                        <div class="d-flex qty-no-box">
+                            <div class="qty-no minus">
+                                <i class="fa-solid fa-minus"></i>
+                            </div>
+                            <div class="qty-no middle">4</div>
+                            <div class="qty-no plus">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <button class="btn-4">ADD TO CART</button>
+                        <button class="btn-4">BUY NOW</button>
+                        <div class="wishlist-heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex share-panel">
+                        <p id="share-this">SHARE THIS</p>
+                        <div class="shortcut icons share">
+                            <a href="https://www.facebook.com/login/" target="_blank"><img
+                                    src="./img/Home-page/facebook round.png" alt="facebook_shortcut"></a>
+                            <a href="https://www.youtube.com/" target="_blank"><img
+                                    src="./img/Home-page/youtube_round.png" alt="youtube_shortcut"></a>
+                            <a href="https://twitter.com/explore" target="_blank"><img
+                                    src="./img/Home-page/twitter round.png" alt="twitter_shortcut"></a>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="">
+                            <i class="fa-solid fa-truck delivery"></i>
+                        </div>
+                        <div class="text-13 color-brown font-bold d-r">
+                            DELIVERY & RETURN
+                        </div>
+                        <div class="helpline">
+                            <img src="./img/Product-view-page/helpline.jpg" alt="helpline">
+                        </div>
+                        <div class="text-13 color-brown font-bold o-s">
+                            ONLINE SUPPORT 24/7
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="s-hr width-950">
+        <hr class="hr">
+    </div>
+
+
+    <!-- Return Order Ends -->
+
+
+    <!-- Description and Guide starts -->
+    <nav>
+        <div class="nav nav-tabs description-area width-950 font-bold" id="nav-tab" role="tablist">
+            <button class="nav-link active color-black" id="nav-home-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                aria-selected="true">Description</button>
+
+            <button class="nav-link color-black" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Sizing Guide</button>
+
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Assigned Tags</button>
+
+            <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled"
+                type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Many Custom Tabs</button>
+        </div>
+    </nav>
+    <div class="tab-content description-area width-950 text-13 mt-10" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+            tabindex="0">
+            <p class="font-bold mt-10">Give you a complete account o the system</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem praesentium architecto ducimus
+                quaerat sit quos eaque id hic molestias! Vero, ratione velit deleniti dolorem quae iusto mollitia
+                quaerat corrupti cumque officiis magni voluptates ipsum inventore, eligendi est nobis. Hic dicta enim
+                commodi velit! Facere explicabo quia perspiciatis minus quod aspernatur! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Tenetur, hic? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Vitae tempora fuga molestiae dignissimos numquam illo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam beatae soluta voluptatibus dolore amet unde
+                rerum iure? Aperiam illum veritatis, molestias hic atque animi magnam dolorum harum ipsam. Suscipit
+                delectus saepe quod, nemo voluptatem sed cum hic explicabo quo, vero minima? Explicabo labore dolore
+                adipisci, nobis nemo dolorum ipsum! Aperiam laudantium alias dignissimos ipsa fugit ex deserunt, fuga
+                cum temporibus illum quasi dicta, nostrum voluptatum minus amet non qui distinctio excepturi quis
+                dolorum eaque deleniti molestiae ad nisi! Dicta sequi in aspernatur, excepturi, vero exercitationem
+                voluptatem error sunt necessitatibus tempore fugiat culpa neque quasi, facere alias. Quisquam dolor quo
+                molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, aut? Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Dolor recusandae, facilis rem corrupti in dolores enim odio ex
+                deserunt esse?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi deserunt minima velit quo nam pariatur
+                eligendi magni vel eaque. Iusto iure ipsa minus quasi nobis eos sed velit ut, suscipit minima aspernatur
+                eum rem ipsum consequatur vel perspiciatis quam recusandae nesciunt deserunt dolore dolorem? Perferendis
+                quam dicta voluptatum minima itaque.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur velit accusamus dolor molestias
+                libero aliquid nesciunt est labore modi expedita, numquam in pariatur praesentium provident sint
+                distinctio exercitationem eum rem ut ipsum quisquam nisi? Distinctio, natus veritatis. Sint harum
+                veritatis magni eaque rerum saepe eos laudantium quis, culpa perspiciatis placeat nesciunt delectus
+                nostrum quod aliquam, accusantium quisquam hic suscipit iste in voluptates tempora praesentium facere.
+                Sint consectetur at dolorum corporis, alias dolorem veniam nemo porro, suscipit, veritatis vero
+                repudiandae modi necessitatibus ratione distinctio exercitationem est ea quis quod odit perferendis quae
+                error velit impedit. Iste aspernatur qui vitae animi ullam? Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Iste repellendus velit sint fugit quos ducimus expedita temporibus quis hic omnis!</p>
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            <p class="font-bold mt-10">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, corrupti.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sapiente itaque dolore nemo dolores beatae
+                incidunt laudantium neque ullam minima. Nobis deleniti adipisci repellat maxime! Ad autem commodi est
+                pariatur expedita perferendis aspernatur optio debitis, eos voluptatem quas fugiat ut, dicta dolores
+                quam dolor eveniet placeat nostrum. Eius, ab natus? In fuga voluptatem ipsum voluptas modi eveniet
+                reiciendis sunt necessitatibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptas atque perferendis libero
+                laboriosam, voluptates eaque deleniti ipsum modi totam nemo perspiciatis! Neque atque ipsa voluptas
+                veniam fuga debitis rem consequuntur nulla nostrum quis! Non voluptatibus fugiat consequatur eveniet
+                tempore iste repellendus quos reiciendis! Quibusdam blanditiis alias corrupti explicabo labore eveniet
+                saepe culpa veritatis? Distinctio consectetur ut quia illum rerum in officia. Rerum laboriosam eligendi
+                ex veniam fugiat accusamus omnis. Omnis voluptatem, modi sed eaque vel maxime dolorem, expedita est
+                pariatur amet soluta vero ratione vitae quibusdam autem nulla voluptates quidem fugiat officia nesciunt
+                quam ipsum! Est numquam nihil fugiat, et deserunt pariatur modi asperiores ratione suscipit, aperiam
+                quaerat! Id, rerum! Magnam qui inventore iste velit quaerat, sapiente placeat nulla!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum excepturi eum nesciunt neque voluptatibus
+                officiis labore sunt nobis, pariatur modi exercitationem maxime praesentium assumenda reprehenderit a
+                voluptas expedita facere! Neque fugit esse commodi dicta perspiciatis, architecto corporis cupiditate,
+                id rerum veritatis aliquid inventore magni quod placeat vitae optio a quasi. Aliquam reprehenderit animi
+                optio unde impedit nesciunt fugiat consequatur eligendi, nostrum eos sunt ipsum aliquid magnam accusamus
+                praesentium voluptas libero autem ullam id earum in iste. Modi tempora aspernatur et.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla rerum maiores iste necessitatibus
+                voluptatem soluta sed vel, eum ipsum? Molestiae modi odio ad quasi laboriosam deleniti excepturi rerum
+                aperiam soluta, accusantium maiores quas deserunt, reiciendis ipsa reprehenderit sit cum vel voluptate
+                provident illo! Dolore sit minima consectetur ut nam aut id placeat! Quos ab incidunt optio animi.
+                Possimus maxime voluptates quae repellat. Ut repellendus similique aperiam corrupti corporis unde, quis
+                obcaecati consequuntur. Enim, quidem velit qui eveniet molestiae distinctio amet repellendus, aliquam
+                iusto dolores, autem inventore beatae. Repudiandae nesciunt, nihil, optio deserunt incidunt a, mollitia
+                voluptatem magnam voluptas quia quaerat ipsam eaque. Vitae libero provident, accusamus dolore minima
+                adipisci, excepturi facere hic quibusdam explicabo assumenda perferendis illo, quisquam odit suscipit!
+            </p>
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+            <p class="font-bold mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cupiditate
+                repellendus in.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, voluptatibus animi explicabo
+                voluptates eaque optio expedita deserunt rem cum illum hic soluta doloremque vitae mollitia similique
+                eligendi pariatur ratione ex nobis culpa laboriosam doloribus commodi facilis sint. Vel, consectetur
+                quas magnam est consequuntur quidem iure, vero laboriosam illum optio possimus quod similique quo facere
+                sit doloribus sunt voluptatibus, mollitia sapiente!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum veniam, facilis ab totam consequatur velit
+                ipsam esse consequuntur pariatur itaque, adipisci perferendis, hic exercitationem blanditiis est! Maxime
+                totam nulla quasi in? Voluptate explicabo sequi, fugit nobis vero rerum error quo dolor facere cumque
+                asperiores voluptates corrupti ratione animi aspernatur possimus quam corporis rem? Tempore error, enim
+                illo incidunt reiciendis pariatur cumque officiis, vero molestias dolore suscipit in nesciunt laboriosam
+                fugit ipsa quibusdam? Sed, distinctio at dignissimos molestias reprehenderit optio animi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate veniam consectetur qui cupiditate
+                vitae obcaecati? Sequi dicta obcaecati modi, nobis totam quod aspernatur quos similique necessitatibus
+                laborum, inventore, voluptatibus aut vitae. Omnis ipsa earum sunt minus recusandae repellendus, debitis
+                odit culpa, quas explicabo ea nam suscipit! Iste blanditiis earum provident architecto totam. Enim
+                praesentium qui neque repellendus itaque quo? Nulla amet iusto harum ad pariatur! Iusto, a amet. At a
+                ullam ab. Fuga, atque unde iure explicabo possimus eius, saepe aspernatur dolorum eveniet, odit omnis
+                sed esse ipsa laboriosam quasi et id? Sapiente nulla doloremque corrupti veritatis reiciendis
+                consequatur! Sunt!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa id, dignissimos doloribus esse suscipit
+                praesentium vel consequuntur qui veritatis perferendis harum optio. Quas non beatae omnis harum quasi
+                adipisci at nihil. Ea assumenda illum esse sapiente dolore quisquam neque animi ad at nihil. Iusto ut
+                eaque animi architecto consequatur delectus consectetur incidunt veniam sint. Non eum, aliquam
+                doloremque reiciendis impedit ea quae minima odit enim atque architecto, consequatur cum sunt fuga
+                repellendus ratione, voluptate aut! Officia illum adipisci ad quidem, quos cumque! Aliquid officiis rem
+                mollitia nesciunt saepe, voluptates doloribus esse. Quis ipsum voluptate natus molestiae numquam cum,
+                accusamus voluptates accusantium iusto aspernatur illo in quaerat laborum nesciunt tempora dolores
+                officia quos inventore error repudiandae sunt veritatis vero. Amet, reiciendis.</p>
+        </div>
+        <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
+            <p class="font-bold mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quisquam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic totam nisi magni dignissimos quisquam
+                ratione officia debitis odio quia, error ipsum unde laborum ipsam reiciendis provident voluptatibus
+                consequuntur doloribus blanditiis? Sapiente soluta est praesentium aperiam veritatis aut quibusdam harum
+                consequatur ipsam, mollitia earum eius dolores impedit cum iste exercitationem libero numquam fugiat
+                sunt? Repellendus, officia labore dicta error inventore ipsa.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda reprehenderit similique alias
+                cupiditate consequuntur ad deserunt quidem a nam nemo, rerum sit culpa ratione minima illo eum sequi
+                accusamus odit. Blanditiis libero fuga dolores animi iure saepe eum magnam odit, qui repellendus beatae,
+                labore dolore nisi illo hic quasi officia corporis laudantium quibusdam! Porro, numquam! Voluptatem a
+                quas officia, magnam nihil earum magni quod, esse distinctio doloribus itaque tempore aliquam
+                perspiciatis aut debitis voluptate beatae! Eaque repellendus esse ab tempore?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore velit impedit praesentium iure esse?
+                Harum, maxime quibusdam quo cumque optio necessitatibus deleniti praesentium aliquid dolor aut
+                repudiandae tempore omnis facilis? Consectetur quibusdam nesciunt architecto quam hic beatae quae
+                ducimus facere magni officia? Dolorem similique qui, architecto doloribus fugiat ipsam consequatur quis
+                ut distinctio dolor, at maxime eveniet quae id! Itaque, libero eum? Laborum, beatae dolores. Molestias
+                optio dolores autem aspernatur animi dignissimos temporibus, enim, nulla quod quaerat tenetur ipsum vel.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi assumenda, provident sed perferendis iste
+                sit aliquid dolorem in voluptas nihil eaque tenetur quaerat expedita, repudiandae placeat cum odit
+                exercitationem quisquam labore! Voluptas nostrum, id asperiores quae eos recusandae? Corporis nobis vel
+                fugit corrupti facilis quisquam ipsam accusantium culpa laborum obcaecati at nemo eos alias quia
+                repellat sunt incidunt, impedit fuga blanditiis unde quam ratione. Consequuntur, commodi, laborum,
+                explicabo minima dicta neque delectus quod voluptatum esse reiciendis voluptatibus. Placeat delectus hic
+                dolor id temporibus aperiam consequatur deserunt reprehenderit, sed minima nam! Doloribus corrupti
+                exercitationem eligendi, maiores aperiam quod nobis aut dolorum ullam rem iste repudiandae, magnam
+                quisquam animi, aliquam placeat recusandae similique hic fugiat! Corporis accusantium eos temporibus
+                maxime, impedit quos.</p>
+        </div>
+    </div>
+
+
+
+    <!-- Description and guide Ends -->
+
+    <div class="des-hr width-950" id="ratings">
+        <hr class="hr">
+    </div>
+
+    <!-- Reviews Starts -->
+    <div class="d-flex reviews" id="">
+        <div>
+            <div class="font-bold text-13">Customer Reviews</div>
+            <div><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="font-bold text-13"> 4 out of 5 stars</span>
+            </div>
+            <div class="text-13">
+                39,122 customer ratings
+            </div>
+            <div class="d-flex mt-10">
+                <div class="text-12 mt--3 mr-10">5 star</div>
+                <div class="progress mr-10">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                </div>
+                <div class="text-12 mt--1">25%</div>
+            </div>
+            <div class="d-flex mt-1">
+                <div class="text-12 mt--3 mr-10">4 star</div>
+                <div class="progress mr-10">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                </div>
+                <div class="text-12 mt--1">25%</div>
+            </div>
+            <div class="d-flex mt-1">
+                <div class="text-12 mt--3 mr-10">3 star</div>
+                <div class="progress mr-10">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 15%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                </div>
+                <div class="text-12 mt--1">15%</div>
+            </div>
+            <div class="d-flex mt-1">
+                <div class="text-12 mt--3 mr-10">2 star</div>
+                <div class="progress mr-10">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 15%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                </div>
+                <div class="text-12 mt--1">15%</div>
+            </div>
+            <div class="d-flex mt-1">
+                <div class="text-12 mt--3 mr-10">1 star</div>
+                <div class="progress mr-10">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                </div>
+                <div class="text-12 mt--1 ">20%</div>
+            </div>
+            <div>
+                <p class="text-13 font-bold mt-50">Review this product</p>
+                <p class="text-13">share your thoughts with other customers</p>
+                <button class="btn-5">Write a Product Review</button>
+            </div>
+        </div>
+        <div class="reviews-right">
+            <div>
+            <div>
+                <img src="./img/Product-view-page/profile.png" alt="profile" class="profile-image">
+                <span class="font-bold text-13">Dr. John Varghese Parampil</span>
+            </div>
+            <div class="mt-10">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="font-bold text-13"> Early delivery, Very reasonable price</span>
+                <div class="mt-10 text-13">Reviewed in India on 8 July 2020</div>
+                <div class="font-bold text-13 mt-10 color-maroon">Verified Purchase</div>
+                <div class="text-13">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum odit hic aperiam in deleniti repudiandae neque reprehenderit tenetur officia maiores libero itaque repellat voluptates, laudantium, quos quas et ipsam. Sed!</div>
+                <br>
+                <div class="text-13">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus odit consequuntur laborum?</div>
+            </div>
+            <button class="btn-6">Helpful</button>
+            <span class="text-13">   |&nbsp;&nbsp; Comment &nbsp;&nbsp; | &nbsp;&nbsp; Report Abuse</span>
+            </div>
+            <div class="mt-30">
+                <div>
+                    <img src="./img/Product-view-page/profile.png" alt="profile" class="profile-image">
+                    <span class="font-bold text-13">Dr. John Varghese Parampil</span>
+                </div>
+                <div class="mt-10">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="font-bold text-13"> Early delivery, Very reasonable price</span>
+                    <div class="mt-10 text-13">Reviewed in India on 8 July 2020</div>
+                    <div class="font-bold text-13 mt-10 color-maroon">Verified Purchase</div>
+                    <div class="text-13">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum odit hic aperiam in deleniti repudiandae neque reprehenderit tenetur officia maiores libero itaque repellat voluptates, laudantium, quos quas et ipsam. Sed!</div>
+                    <br>
+                    <div class="text-13">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus odit consequuntur laborum?</div>
+                </div>
+                <button class="btn-6">Helpful</button>
+                <span class="text-13">   |&nbsp;&nbsp; Comment &nbsp;&nbsp; | &nbsp;&nbsp; Report Abuse</span>
+                </div>
+                <div class="mt-30 text-12 font-bold">
+                   <a href="">See all reviews from India</a>
+                </div>
+        </div>
+
+    </div>
+    <div class="des-hr width-950">
+        <hr class="hr">
+    </div>
+
+    <!-- Review Ends -->
+
+    <!-- Related Products Starts -->
+    
+    <p class="ml-200 text-20 mt-50">RELATED PRODUCTS</p>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="hot-deals">
+                    <div class="lpr1 d-flex">
+                        <section class="lpr1-p1">
+                            <img id="r1-lp1" src="./img/Home-page/product1.png" alt="">
+                            <button class="new">New</button>
+                            <h5>Dummy Text lorel</h5>
+                            <div>
+                                <div id="price-tag">
+                                    <span class="price">Rs 1099.0&nbsp;</span>
+                                    <del class="o-price">Rs 2748.0</del>
+                                    <span class="d-price">(60% Off)</span><br>
+                                </div>
+                                <img class="star" id="star1" src="./img/Home-page/rating.png" alt="">
+                            </div>
+                        </section>
+                        <div class="r1-c2">
+                            <section class="lpr1-p1">
+                                <img id="r1-lp1" src="./img/Home-page/product1.png" alt="">
+                                <h5>Dummy Text lorel</h5>
+                                <div>
+                                    <div id="price-tag">
+                                        <span class="price">Rs 1099.0&nbsp;</span>
+                                        <del class="o-price">Rs 2748.0</del>
+                                        <span class="d-price">(60% Off)</span><br>
+                                    </div>
+                                    <img class="star" id="star1" src="/img/Home-page/rating.png" alt="">
+                                </div>
+                            </section>
+                        </div>
+                        <div class="r1-c2">
+                            <section class="lpr1-p1">
+                                <a href="./product-view-page.html"><img id="r1-lp1" src="./img/Home-page/product1.png" alt=""></a>
+                                <button class="new">New</button>
+                                <a href="./product-view-page.html" class="product-name">
+                                    <h5>Dummy Text lorel</h5>
+                                </a>
+                                <div>
+                                    <div id="price-tag">
+                                        <span class="price">Rs 1099.0&nbsp;</span>
+                                        <del class="o-price">Rs 2748.0</del>
+                                        <span class="d-price">(60% Off)</span><br>
+                                    </div>
+                                    <a href="./product-view-page.html"><img class="star" id="star1" src="./img/Home-page/rating.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hot-deals">
+                    <div class="lpr1">
+                        <section class="lpr1-p1">
+                            <img id="r1-lp1" src="./img/Home-page/product2.png" alt="">
+                            <button class="new">New</button>
+                            <h5>Dummy Text lorel</h5>
+                            <div>
+                                <div id="price-tag">
+                                    <span class="price">Rs 1099.0&nbsp;</span>
+                                    <del class="o-price">Rs 2748.0</del>
+                                    <span class="d-price">(60% Off)</span><br>
+                                </div>
+                                <img class="star" id="star1" src="./img/Home-page/rating.png" alt="">
+                            </div>
+                        </section>
+                        <div class="r1-c2">
+                            <section class="lpr1-p1">
+                                <img id="r1-lp1" src="./img/Home-page/product2.png" alt="">
+                                <h5>Dummy Text lorel</h5>
+                                <div>
+                                    <div id="price-tag">
+                                        <span class="price">Rs 1099.0&nbsp;</span>
+                                        <del class="o-price">Rs 2748.0</del>
+                                        <span class="d-price">(60% Off)</span><br>
+                                    </div>
+                                    <img class="star" id="star1" src="/img/Home-page/rating.png" alt="">
+                                </div>
+                            </section>
+                        </div>
+                        <div class="r1-c2">
+                            <section class="lpr1-p1">
+                                <a href="./product-view-page.html"><img id="r1-lp1" src="./img/Home-page/product2.png" alt=""></a>
+                                <button class="new">New</button>
+                                <a href="./product-view-page.html" class="product-name">
+                                    <h5>Dummy Text lorel</h5>
+                                </a>
+                                <div>
+                                    <div id="price-tag">
+                                        <span class="price">Rs 1099.0&nbsp;</span>
+                                        <del class="o-price">Rs 2748.0</del>
+                                        <span class="d-price">(60% Off)</span><br>
+                                    </div>
+                                    <a href="./product-view-page.html"><img class="star" id="star1" src="./img/Home-page/rating.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hot-deals">
+                    <div class="lpr1">
+                        <section class="lpr1-p1">
+                            <img id="r1-lp1" src="./img/Home-page/product3.png" alt="">
+                            <button class="new">New</button>
+                            <h5>Dummy Text lorel</h5>
+                            <div>
+                                <div id="price-tag">
+                                    <span class="price">Rs 1099.0&nbsp;</span>
+                                    <del class="o-price">Rs 2748.0</del>
+                                    <span class="d-price">(60% Off)</span><br>
+                                </div>
+                                <img class="star" id="star1" src="./img/Home-page/rating.png" alt="">
+                            </div>
+                        </section>
+                        <div class="r1-c2">
+                            <section class="lpr1-p1">
+                                <img id="r1-lp1" src="./img/Home-page/product3.png" alt="">
+                                <h5>Dummy Text lorel</h5>
+                                <div>
+                                    <div id="price-tag">
+                                        <span class="price">Rs 1099.0&nbsp;</span>
+                                        <del class="o-price">Rs 2748.0</del>
+                                        <span class="d-price">(60% Off)</span><br>
+                                    </div>
+                                    <img class="star" id="star1" src="/img/Home-page/rating.png" alt="">
+                                </div>
+                            </section>
+                        </div>
+                        <div class="r1-c2">
+                            <section class="lpr1-p1">
+                                <a href="./product-view-page.html"><img id="r1-lp1" src="./img/Home-page/product3.png" alt=""></a>
+                                <button class="new">New</button>
+                                <a href="./product-view-page.html" class="product-name">
+                                    <h5>Dummy Text lorel</h5>
+                                </a>
+                                <div>
+                                    <div id="price-tag">
+                                        <span class="price">Rs 1099.0&nbsp;</span>
+                                        <del class="o-price">Rs 2748.0</del>
+                                        <span class="d-price">(60% Off)</span><br>
+                                    </div>
+                                    <a href="./product-view-page.html"><img class="star" id="star1" src="./img/Home-page/rating.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- Related Product Ends -->
+
+
+
+    <!-- Key Feature -->
+    <div class="key-feature">
+        <section class="kf1">
+            <img src="./img/Home-page/Image 34.png" alt="secure-payment">
+            <h5>100% SECURE PAYMENTS</h5>
+            <div class="text"><span>Turpis Eleifend Vitae Malesuada Magna<br>Congue. Damus Id Ullamcorper Neque.</span>
+            </div>
+        </section>
+        <section class="kf2">
+            <img src="./img/Home-page/Image 35.png" alt="trustpay">
+            <h5>TRUSTPAY</h5>
+            <div class="text"><span>Turpis Eleifend Vitae Malesuada Magna<br>Congue. Damus Id Ullamcorper Neque.</span>
+            </div>
+        </section>
+        <section class="kf3">
+            <img src="./img/Home-page/Image 36.png" alt="help-center">
+            <h5>HELP CENTER</h5>
+            <div class="text"><span>Turpis Eleifend Vitae Malesuada Magna<br>Congue. Damus Id Ullamcorper Neque.</span>
+            </div>
+        </section>
+        <section class="kf4">
+            <img src="./img/Home-page/Image 37.png" alt="shop-on-the-go">
+            <h5>SHOP ON THE GO</h5>
+            <div class="text"><span>Turpis Eleifend Vitae Malesuada Magna<br>Congue. Damus Id Ullamcorper Neque.</span>
+            </div>
+        </section>
+    </div>
+
+    <!-- Values -->
+    <div class="values">
+        <div class="policy-info">
+            <ul>
+                <li>
+                    <h6>POLICY INFO</h6>
+                </li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms of Sale</a></li>
+                <li><a href="">Terms of Use</a></li>
+                <li><a href="">Report Abuse & Takedown Policy</a></li>
+            </ul>
+        </div>
+        <div class="company">
+            <ul>
+                <li>
+                    <h6>COMPANY</h6>
+                </li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Core Values</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Sitemap</a></li>
+            </ul>
+        </div>
+        <div class="sd-business">
+            <ul>
+                <li>
+                    <h6>SNAPDEAL BUSINESS</h6>
+                </li>
+                <li><a href="./seller-page.html">Register as a Seller</a></li>
+                <li><a href="">Sell on Snapdeal</a></li>
+                <li><a href="">Advertise on Snapdeal</a></li>
+                <li><a href="">Media Enquiries</a></li>
+                <li><a href="">Be an Affiliate</a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <ul>
+                <li>
+                    <h6>NEED HELP ?</h6>
+                </li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Online Shopping</a></li>
+            </ul>
+        </div>
+        <div class="subscribe">
+            <ul>
+                <li>
+                    <h6>SUBSCRIBE</h6>
+                </li>
+                <li><input type="email" placeholder="Your Email Address">
+                    <button id="subscribe">Subscribe</button>
+                </li>
+                <li id="register">Register now to get updates on promotions<br>
+                    and coupons. or <a id="app" href="">Download App</a></li>
+            </ul>
+        </div>
+        <div class="to-top">
+            <img src="./img/Home-page/up.png" alt="up" onclick="topFunction()">
+        </div>
+    </div>
+    <hr class="hr">
+
+    <!-- Footer -->
+    <div>
+        <div class="footer">
+            <h6 id="payment">PAYMENT</h6>
+            <h6 id="connect">CONNECT</h6>
+        </div>
+        <div class="footer-images">
+            <section id="cards">
+                <img src="./img/Home-page/Image 38.png" alt="card1">
+                <img src="./img/Home-page/Image 39.png" alt="card2">
+                <img src="./img/Home-page/Image 40.png" alt="card3">
+                <img src="./img/Home-page/Image 41.png" alt="card4">
+                <img src="./img/Home-page/Image 42.png" alt="cod">
+                <img src="./img/Home-page/Image 43.png" alt="net banking">
+            </section>
+            <section id="connect-via-logo">
+                <a href=""><img src="./img/Home-page/Image 44.png" alt="fb"></a>
+                <a href=""><img src="./img/Home-page/Image 45.png" alt="tweeter"></a>
+                <a href=""><img src="./img/Home-page/Image 46.png" alt="youtube"></a>
+                <a href=""><img src="./img/Home-page/Image 47.png" alt="insta"></a>
+            </section>
+        </div>
+    </div>
+    <script src="./JS/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
